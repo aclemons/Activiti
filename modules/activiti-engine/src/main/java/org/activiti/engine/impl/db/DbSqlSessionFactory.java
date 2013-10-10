@@ -59,6 +59,9 @@ public class DbSqlSessionFactory implements SessionFactory {
     
     // oracle
     addDatabaseSpecificStatement("oracle", "selectExclusiveJobsToExecute", "selectExclusiveJobsToExecute_oracle");
+
+    // hana
+    addDatabaseSpecificStatement("hana", "selectExclusiveJobsToExecute", "selectExclusiveJobsToExecute_hana");
   }
   
   protected String databaseType;
