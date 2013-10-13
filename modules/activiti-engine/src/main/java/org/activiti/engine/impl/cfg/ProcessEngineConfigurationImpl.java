@@ -456,6 +456,7 @@ public abstract class ProcessEngineConfigurationImpl extends ProcessEngineConfig
   
   protected static Properties getDefaultDatabaseTypeMappings() {
     Properties databaseTypeMappings = new Properties();
+    databaseTypeMappings.setProperty("Apache Derby", "derby");
     databaseTypeMappings.setProperty("H2","h2");
     databaseTypeMappings.setProperty("MySQL","mysql");
     databaseTypeMappings.setProperty("Oracle","oracle");
